@@ -81,7 +81,7 @@
         var defaults = {
             blowAnimations: ['blow-soft-left', 'blow-medium-left', 'blow-soft-right', 'blow-medium-right'],
             className: 'sakura',
-            fallSpeed: 1,
+            fallSpeed: 2,
             maxSize: 14,
             minSize: 10,
             newOn: 300,
@@ -111,7 +111,7 @@
 
                 // Build animation
                 var animations =
-                    'fall ' + fallTime + 's linear 0s 1' + ', ' +
+                    'fall ' + fallTime + 's linear 0s infinite' + ', ' +
                         blowAnimation + ' ' + (((fallTime > 30 ? fallTime : 30) - 20) + randomInt(0, 20)) + 's linear 0s infinite' + ', ' +
                         swayAnimation + ' ' + randomInt(2, 4) + 's linear 0s infinite';
 
